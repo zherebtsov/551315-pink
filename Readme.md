@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Дмитрий Жеребцов](https://up.htmlacademy.ru/adaptive/14/user/551315).
-* Наставник: `Неизвестно`.
+* Наставник: [Михаил Поданев](https://htmlacademy.ru/profile/mpodanev).
 
 ---
 
