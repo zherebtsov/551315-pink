@@ -1,0 +1,22 @@
+.button {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  color: #ffffff;
+  text-decoration: none;
+
+  background-color: transparent;
+  border: solid 3px #ffffff;
+  border-radius: 25px;
+
+  &--accent {
+    color: $accent-color;
+    border-color: $accent-color;
+  }
+
+  &--disabled {
+    color: $dark-blue;
+    opacity: 0.1;
+    border-color: $dark-blue;
+  }
+}

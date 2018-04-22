@@ -2,32 +2,35 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+    <title>HTML Academy: Пинк - Главная</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
     <header class="page-header">
       <nav class="page-header__nav main-nav">
-        <a href="#" class="page-header__logo main-nav__logo">PINK</a>
+        <a class="page-header__logo main-nav__logo">
+          <img src="img/logo-pink-white-mobile.svg" alt="pink" height="33" width="75">
+        </a>
         <button class="main-nav__toggle main-nav__toggle--hamburger">Открыть меню</button>
         <button class="main-nav__toggle main-nav__toggle--close">Закрыть меню</button>
         <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--active">
-            <a>Главная</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--active">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">Фотографии</a>
+            <a class="main-nav__link" href="photo.html">Фотографии</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">Конкурс</a>
+            <a class="main-nav__link" href="form.html">Конкурс</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">Html academy</a>
+            <a class="main-nav__link" href="https://htmlacademy.ru/" target="_blank">Html academy</a>
           </li>
         </ul>
       </nav>
       <section class="page-header__main app-image">
-        <img src="http://placehold.it/315x500" alt="Мобильное приложение Pink" class="app-image__image" height="315" width="500">
+        <img src="img/iphone-hand-mobile@1x.png" alt="Мобильное приложение Pink" class="app-image__image" height="286" width="258">
       </section>
       <section class="page-header__about app-about">
         <a href="#" class="app-about__download button">Скачать приложение</a>
@@ -46,7 +49,7 @@
 
       <section class="advantages">
         <h2 class="visually-hidden">Наши преимущества</h2>
-        <h2 class="advantages__title">Устали от серости магаполиса?</h2>
+        <h2 class="advantages__title">Устали от серости мегаполиса?</h2>
         <h2 class="advantages__title">Нам есть, что вам предложить!</h2>
         <div class="advantages__list-wrapper">
           <ul class="advantages__list">
@@ -63,7 +66,7 @@
               <p class="advantages__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
           </ul>
-          <img src="http://placehold.it/320x157" alt="Мобильное приложение Pink" class="advantages__image" height="320" width="157">
+          <img src="img/iphone-screen-mobile@1x.png" alt="Мобильное приложение Pink" class="advantages__image" height="320" width="157">
         </div>
       </section>
 
@@ -176,7 +179,7 @@
         <span class="contacts__link">ул. Большая Конюшенная, 19/8</span>
       </section>
       <section class="page-footer__map map">
-        <img src="http://placehold.it/230x320" alt="ул. Большая Конюшенная, 19/8" class="map__image" height="230" width="320">
+        <img src="img/bg-map-mobile@1x.png" alt="ул. Большая Конюшенная, 19/8" class="map__image" height="645" width="320">
       </section>
     </footer>
 

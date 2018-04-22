@@ -1,0 +1,29 @@
+.app-about__os-list {
+  @include reset-list;
+}
+
+.app-about__os-item {
+  margin: 0 auto;
+
+  &--apple {
+    height: 56px;
+    width: 47px;
+    background: url("../img/logo-apple.svg") no-repeat 0 0;
+  }
+
+  &--android {
+    height: 47px;
+    width: 43px;
+    background: url("../img/logo-android.svg") no-repeat 0 0;
+  }
+
+  &--windows {
+    height: 41px;
+    width: 44px;
+    background: url("../img/logo-microsoft.svg") no-repeat 0 0;
+  }
+}
+
+.app-about__os-text {
+  font-weight: lighter;
+}

@@ -1,0 +1,59 @@
+.tariffs {
+  background-color: $bgc-grey;
+}
+
+.tariffs__list {
+  @include reset-list;
+}
+
+.tariffs__item {
+  background-color: #ffffff;
+}
+
+.tariffs__header {
+  text-align: center;
+
+  background-color: $dark-blue;
+}
+
+.tariffs__name {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.tariffs__price {
+  font-size: 24px;
+  font-weight: lighter;
+  line-height: 30px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.tariffs__function-list {
+  @include reset-list;
+}
+
+.tariffs__function-item {
+  border-bottom: solid 2px #e5e5e5;
+}
+
+.tariffs__function-name {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 30px;
+  color: $dark-blue;
+  text-transform: uppercase;
+}
+
+.tariffs__function-status {
+  &--on {
+    background: url("../img/icon-yes.svg") no-repeat 0 0;
+  }
+
+  &--off {
+    background: url("../img/icon-no.svg") no-repeat 0 0;
+  }
+}

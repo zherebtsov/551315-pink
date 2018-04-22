@@ -3,26 +3,29 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк - Фотографии</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
     <header class="page-header">
       <nav class="page-header__nav main-nav">
-        <a href="#" class="page-header__logo main-nav__logo">PINK</a>
+        <a href="index.html" class="page-header__logo main-nav__logo">
+          <img src="img/logo-pink-white-mobile.svg" alt="pink" height="33" width="75">
+        </a>
         <button class="main-nav__toggle main-nav__toggle--hamburger">Открыть меню</button>
         <button class="main-nav__toggle main-nav__toggle--close">Закрыть меню</button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__item main-nav__item--active">
-            <a>Фотографии</a>
+            <a class="main-nav__link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">Конкурс</a>
+            <a class="main-nav__link main-nav__link--active">Фотографии</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">Html academy</a>
+            <a class="main-nav__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="https://htmlacademy.ru/" target="_blank">Html academy</a>
           </li>
         </ul>
       </nav>
@@ -41,7 +44,7 @@
       <article class="photo-post photo-post--main">
         <section class="photo-post__photo photo-post__photo--panorama">
           <span class="photo-post__photo-label">Панорама дня</span>
-          <img src="http://placehold.it/137x320" alt="" height="137" width="320">
+          <img src="img/panorama-mobile@1x.jpg" alt="" height="137" width="320">
         </section>
         <section class="photo-post__description">
           <b class="photo-post__author-name">Анна</b>
@@ -54,7 +57,7 @@
 
       <article class="photo-post">
         <section class="photo-post__photo">
-          <img src="http://placehold.it/180x280" alt="" height="180" width="280">
+          <img src="img/photo-car-mobile@1x.jpg" alt="" height="180" width="280">
         </section>
         <section class="photo-post__description">
           <b class="photo-post__author-name">Левон</b>
@@ -67,7 +70,7 @@
 
       <article class="photo-post">
         <section class="photo-post__photo">
-          <img src="http://placehold.it/180x280" alt="" height="180" width="280">
+          <img src="img/photo-drumset-mobile@1x.jpg" alt="" height="180" width="280">
         </section>
         <section class="photo-post__description">
           <b class="photo-post__author-name">Антон</b>
@@ -80,7 +83,7 @@
 
       <article class="photo-post">
         <section class="photo-post__photo">
-          <img src="http://placehold.it/180x280" alt="" height="180" width="280">
+          <img src="img/photo-window-mobile@1x.jpg" alt="" height="180" width="280">
         </section>
         <section class="photo-post__description">
           <b class="photo-post__author-name">Борис</b>
@@ -93,7 +96,7 @@
 
       <article class="photo-post">
         <section class="photo-post__photo">
-          <img src="http://placehold.it/180x280" alt="" height="180" width="280">
+          <img src="img/photo-fair-mobile@1x.jpg" alt="" height="180" width="280">
         </section>
         <section class="photo-post__description">
           <b class="photo-post__author-name">Сергей</b>
@@ -106,7 +109,7 @@
 
       <article class="photo-post">
         <section class="photo-post__photo">
-          <img src="http://placehold.it/180x280" alt="" height="180" width="280">
+          <img src="img/photo-pov-mobile@1x.jpg" alt="" height="180" width="280">
         </section>
         <section class="photo-post__description">
           <b class="photo-post__author-name">Максим</b>
@@ -119,7 +122,7 @@
 
       <article class="photo-post">
         <section class="photo-post__photo">
-          <img src="http://placehold.it/180x280" alt="" height="180" width="280">
+          <img src="img/photo-wing-mobile@1x.jpg" alt="" height="180" width="280">
         </section>
         <section class="photo-post__description">
           <b class="photo-post__author-name">Надежда</b>
@@ -136,7 +139,7 @@
       </section>
 
       <section class="photo-editor">
-        <img src="http://placehold.it/374x280" alt="" class="photo-editor__photo" height="374" width="280">
+        <img src="img/photo-road-mobile@1x.jpg" alt="" class="photo-editor__photo" height="374" width="280">
         <div class="photo-editor__tool-list">
           <button class="photo-editor__tool photo-editor__tool--crop">Обрезать фото</button>
           <button class="photo-editor__tool photo-editor__tool--color">Изменить цвет</button>
@@ -146,8 +149,8 @@
           Настройка
           <input type="range" class="photo-editor__tool-range">
         </label>
-        <button class="button button--red">Запостить</button>
-        <button class="button" disabled>Отмена</button>
+        <button class="button button--accent">Запостить</button>
+        <button class="button button--disabled" disabled>Отмена</button>
       </section>
 
     </main>
@@ -155,7 +158,7 @@
     <footer class="page-footer">
       <section class="page-footer__logo logo">
         <a href="index.html" class="logo__link">
-          <img src="http://placehold.it/40x147" alt="pink" class="logo__image" height="40" width="147">
+          <img src="img/logo-pink-blue-mobile.svg" alt="pink" class="logo__image" height="40" width="147">
         </a>
       </section>
       <section class="page-footer__social social">

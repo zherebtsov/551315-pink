@@ -2,27 +2,30 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <title>HTML Academy: Пинк - Фотографии</title>
+  <title>HTML Academy: Пинк - Конкурс</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
   <header class="page-header">
     <nav class="page-header__nav main-nav">
-      <a href="#" class="page-header__logo main-nav__logo">PINK</a>
+      <a href="index.html" class="page-header__logo main-nav__logo">
+        <img src="img/logo-pink-white-mobile.svg" alt="pink" height="33" width="75">
+      </a>
       <button class="main-nav__toggle main-nav__toggle--hamburger">Открыть меню</button>
       <button class="main-nav__toggle main-nav__toggle--close">Закрыть меню</button>
       <ul class="main-nav__list">
         <li class="main-nav__item">
-          <a href="index.html">Главная</a>
+          <a class="main-nav__link" href="index.html">Главная</a>
         </li>
         <li class="main-nav__item">
-          <a href="photo.html">Фотографии</a>
-        </li>
-        <li class="main-nav__item main-nav__item--active">
-          <a>Конкурс</a>
+          <a class="main-nav__link" href="photo.html">Фотографии</a>
         </li>
         <li class="main-nav__item">
-          <a href="#">Html academy</a>
+          <a class="main-nav__link main-nav__link--active">Конкурс</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="https://htmlacademy.ru/" target="_blank">Html academy</a>
         </li>
       </ul>
     </nav>
@@ -128,7 +131,7 @@
   <footer class="page-footer">
     <section class="page-footer__logo logo">
       <a href="index.html" class="logo__link">
-        <img src="http://placehold.it/40x147" alt="pink" class="logo__image" height="40" width="147">
+        <img src="img/logo-pink-blue-mobile.svg" alt="pink" class="logo__image" height="40" width="147">
       </a>
     </section>
     <section class="page-footer__social social">

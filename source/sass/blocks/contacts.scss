@@ -1,0 +1,22 @@
+.contacts {
+  text-align: center;
+}
+
+.contacts__title {
+  font-size: 24px;
+  font-weight: lighter;
+  color: $dark-blue;
+}
+
+.contacts__subtitle {
+  font-size: 18px;
+  font-weight: bold;
+  color: $dark-blue;
+}
+
+.contacts__link {
+  font-size: 24px;
+  font-weight: lighter;
+  color: $accent-color;
+  text-decoration: none;
+}
