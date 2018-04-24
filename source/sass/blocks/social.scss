@@ -1,0 +1,24 @@
+.social__list {
+  @include reset-list;
+}
+
+.social__link {
+  display: block;
+  height: 45px;
+  width: 45px;
+
+  border: solid 3px #e9ebec;
+  border-radius: 25px;
+
+  &--twitter {
+    background: url("../img/icon-twitter.svg") no-repeat 0 0;
+  }
+
+  &--facebook {
+    background: url("../img/icon-facebook.svg") no-repeat 0 0;
+  }
+
+  &--youtube {
+    background: url("../img/icon-youtube.svg") no-repeat 0 0;
+  }
+}

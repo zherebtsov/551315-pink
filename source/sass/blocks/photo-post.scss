@@ -1,0 +1,32 @@
+.photo-post__photo-label {
+  background-color: $accent-color;
+}
+
+.photo-post__description {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+  color: $dark-blue;
+
+  background-color: $bgc-grey;
+}
+
+.photo-post__author-name {
+  font-weight: bold;
+}
+
+.photo-post__time {
+  font-size: 12px;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+.photo-post__like-button {
+  background: url("../img/icon-heart.svg") no-repeat 0 0;
+}
+
+.photo-post__like-counter {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: $accent-color;
+}

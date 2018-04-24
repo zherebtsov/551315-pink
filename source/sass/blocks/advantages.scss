@@ -1,0 +1,29 @@
+.advantages {
+  text-align: center;
+}
+
+.advantages__title {
+  font-size: 24px;
+  font-weight: lighter;
+  color: $dark-blue;
+}
+
+.advantages__list-wrapper {
+  background-color: $bgc-grey;
+}
+
+.advantages__list {
+  @include reset-list;
+}
+
+.advantages__subtitle {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.advantages__text {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+  color: $dark-blue;
+}
