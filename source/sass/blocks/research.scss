@@ -1,0 +1,109 @@
+.research {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .research {
+    display: block;
+    padding-top: 95px;
+    padding-bottom: 68px;
+  }
+
+  .research__container {
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -35px;
+      left: 0;
+      width: 238px;
+      height: 276px;
+      background-image: url("../img/icon-editor-diagram-fill.svg"), url("../img/icon-timer.svg");
+      background-repeat: no-repeat, no-repeat;
+      background-position: 18px 55px, 0 0;
+      background-size: 202px 202px, 238px auto;
+    }
+
+    &::after {
+      content: "24";
+      display: block;
+      position: absolute;
+      top: 67px;
+      left: 119px;
+      transform: translateX(-50%);
+      font-size: 96px;
+      font-weight: 700;
+      line-height: 96px;
+      color: $accent-color;
+    }
+  }
+
+  .research__title {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 36px;
+    padding-right: 30px;
+    padding-left: 309px;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  .research__text {
+    padding-right: 10px;
+    padding-left: 309px;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  .research__link {
+    color: $accent-color;
+    padding-right: 10px;
+    padding-left: 309px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .research {
+    background-color: $bgc-grey;
+    padding-top: 115px;
+    padding-bottom: 113px;
+  }
+
+  .research__container {
+    &::before {
+      top: -90px;
+      left: 0;
+      width: 298px;
+      height: 345px;
+      background-position: 23px 69px,0 0;
+      background-size: 253px 253px,298px auto;
+    }
+
+    &::after {
+      top: 40px;
+      left: 148px;
+      font-size: 120px;
+      line-height: 120px;
+    }
+  }
+
+  .research__title {
+    padding-left: 365px;
+    margin-bottom: 22px;
+  }
+
+  .research__text {
+    font-size: 18px;
+    line-height: 30px;
+    padding-left: 365px;
+    margin-bottom: 32px;
+  }
+
+  .research__link {
+    font-size: 18px;
+    line-height: 30px;
+    padding-left: 365px;
+  }
+}

@@ -1,0 +1,283 @@
+.editor {
+  background-color: $bgc-grey;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 58px;
+    padding-bottom: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    padding-top: 53px;
+    padding-left: 80px;
+    padding-right: 60px;
+    padding-bottom: 56px;
+  }
+}
+
+.editor__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    margin: 0;
+  }
+}
+
+.editor__inner {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.editor__img {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  line-height: 0;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 300px;
+    min-height: 400px;
+    padding: 0;
+    padding-right: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 3px;
+  }
+
+  img {
+    margin: 0 auto;
+  }
+}
+
+.editor__filter {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 22px 20px 80px;
+
+  @media (min-width: $tablet-width) {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 275px;
+    padding: 0;
+    padding-top: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 410px;
+    padding-top: 0;
+  }
+}
+
+.editor__option {
+  display: block;
+  width: 48px;
+  height: 44px;
+  margin-right: 34px;
+  font-size: 0;
+  opacity: 0.3;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    width: 24px;
+    height: 22px;
+    padding-bottom: 30px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    opacity: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 48px;
+    height: 44px;
+    padding-bottom: 20px;
+    margin-right: 20px;
+    margin-bottom: 8px;
+  }
+
+  &:nth-of-type(1) {
+    width: 44px;
+    background-image: url("../img/icon-editor-crop.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 44px 44px;
+
+    @media (min-width: $tablet-width) {
+      width: 24px;
+      background-image: url("../img/icon-editor-crop_active.svg");
+      background-position: top;
+      background-size: 22px 22px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 48px;
+      background-position: 0 1px;
+      background-size: 44px 44px;
+    }
+  }
+
+  &:nth-of-type(2) {
+    background-image: url("../img/icon-editor-fill.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 48px 43px;
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/icon-editor-fill_active.svg");
+      background-position: 3px 3px;
+      background-size: 24px 22px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-position: 0 4px;
+      background-size: 48px 43px;
+    }
+  }
+
+  &:nth-of-type(3) {
+    margin-right: 0;
+    background-image: url("../img/icon-editor-contrast.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 32px 32px;
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/icon-editor-contrast_active.svg");
+      background-position: 8px 2px;
+      background-size: 16px 16px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-position: 6px 6px;
+      background-size: 32px 32px;
+    }
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 4px;
+    left: -20px;
+    width: 320px;
+    height: 1px;
+    background-color: #000000;
+    opacity: 0.1;
+
+    @media (min-width: $tablet-width) {
+      bottom: 4px;
+      left: auto;
+      width: 275px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 410px;
+    }
+  }
+
+  &--active {
+    opacity: 1;
+
+    &:nth-of-type(1) {
+      background-image: url("../img/icon-editor-crop_active.svg");
+    }
+
+    &:nth-of-type(2) {
+      background-image: url("../img/icon-editor-fill_active.svg");
+    }
+
+    &:nth-of-type(3) {
+      background-image: url("../img/icon-editor-contrast_active.svg");
+    }
+  }
+
+  &:hover:not([class~="editor__option--active"]) {
+    opacity: 0.5;
+
+    @media (min-width: $tablet-width) {
+      opacity: 1;
+    }
+  }
+}
+
+.editor__range {
+  display: none;
+  position: absolute;
+  left: 50%;
+  bottom: 33px;
+  width: 240px;
+  transform: translateX(-50%);
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    position: relative;
+    left: auto;
+    bottom: auto;
+    width: 202px;
+    margin-top: 4px;
+    margin-right: 17px;
+    transform: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 288px;
+    margin-top: 17px;
+    margin-right: 29px;
+  }
+
+  &--visible {
+    display: block;
+  }
+}
+
+.editor__buttons {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 0 28px;
+
+  @media (min-width: $tablet-width) {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 275px;
+    padding: 0;
+    padding-right: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 410px;
+    padding: 0;
+  }
+}
+
+.editor__button {
+  margin-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 183px;
+    margin-bottom: 0;
+  }
+}

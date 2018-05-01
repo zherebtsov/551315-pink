@@ -3,3 +3,46 @@
   padding: 0;
   list-style-type: none;
 }
+
+@mixin container {
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-container-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-container-width;
+  }
+}
+
+@mixin input-text {
+  padding: 15px 20px;
+  border: 2px solid #e5e5e5;
+  border-radius: 2px;
+  outline: 0;
+
+  &:hover {
+    border-color: $dark-blue;
+  }
+
+  &:focus {
+    border-color: $accent-color;
+  }
+}
+
+@mixin contact-icon {
+  content: "";
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 60px;
+  height: 100%;
+  background-color: #e5e5e5;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-top-right-radius: 1px;
+  border-bottom-right-radius: 1px;
+}

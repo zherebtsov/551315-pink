@@ -1,5 +1,18 @@
 .reviews {
   text-align: center;
+  padding-top: 45px;
+  padding-bottom: 38px;
+  position: relative;
+}
+
+.reviews__item {
+  display: none;
+  margin: 0;
+  margin-bottom: 27px;
+
+  &--active {
+    display: block;
+  }
 }
 
 .reviews__author-name {
@@ -8,9 +21,130 @@
   font-style: normal;
 }
 
+.reviews__author-description {
+  display: none;
+}
+
 .reviews__text {
   font-size: 14px;
   font-weight: normal;
   line-height: 30px;
   color: $dark-blue;
+}
+
+.reviews__prev,
+.reviews__next {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews {
+    padding-top: 40px;
+    padding-bottom: 16px;
+  }
+
+  .reviews__list {
+    margin-bottom: 28px;
+  }
+
+  .reviews__item {
+    &--active {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+
+  .reviews__text {
+    font-size: 18px;
+    line-height: 30px;
+    color: $dark-blue;
+    margin-bottom: 35px;
+  }
+
+  .reviews__author-name {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .reviews__author-description {
+    display: block;
+    font-size: 14px;
+    line-height: 30px;
+    color: $dark-blue;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    padding-top: 167px;
+    padding-bottom: 10px;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 71px;
+      left: 50%;
+      width: 82px;
+      height: 63px;
+      background: url("../img/icon-quotes.svg") no-repeat;
+      background-size: 79px 63px;
+      transform: translateX(-46%);
+      opacity: 0.06;
+    }
+  }
+
+  .reviews__container {
+    position: relative;
+  }
+
+  .reviews__list {
+    padding: 0 100px;
+  }
+
+  .reviews__author-name {
+    font-size: 24px;
+  }
+
+  .reviews__author-description {
+    font-size: 18px;
+    margin-top: 2px;
+  }
+
+  .reviews__prev {
+    padding: 0;
+    margin: 0;
+    border: none;
+    display: block;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    width: 22px;
+    height: 42px;
+    background: url("../img/icon-review-arrow-left.svg") no-repeat;
+    background-size: 22px 42px;
+    opacity: 0.3;
+  }
+
+  .reviews__next {
+    padding: 0;
+    margin: 0;
+    border: none;
+    display: block;
+    position: absolute;
+    top: 45px;
+    right: 0;
+    width: 22px;
+    height: 42px;
+    background: url("../img/icon-review-arrow-right.svg") no-repeat;
+    background-size: 22px 42px;
+    opacity: 0.3;
+  }
+
+  .reviews__toggles {
+    display: none;
+  }
 }

@@ -1,6 +1,27 @@
+.copyright {
+  margin-top: 16px;
+  min-width: 130px;
+  display: flex;
+  justify-content: center;
+}
+
+.copyright__text {
+  margin-right: 15px;
+  margin-top: 3px;
+}
+
 .copyright__link {
   display: block;
   height: 34px;
   width: 27px;
   background: url("../img/logo-htmlacademy.svg") no-repeat 0 0;
+}
+
+@media (min-width: $desktop-width) {
+  .copyright__text {
+    font-size: 18px;
+    line-height: 18px;
+    margin-right: 14px;
+    padding-top: 2px;
+  }
 }
