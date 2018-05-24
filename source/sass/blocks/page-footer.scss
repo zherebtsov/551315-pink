@@ -11,6 +11,31 @@
   text-align: center;
 }
 
+.page-footer__logo-link {
+  display: block;
+
+  &:focus,
+  &:hover {
+    .page-footer__logo path {
+      fill: $accent-color;
+    }
+  }
+
+  &:active {
+    .page-footer__logo {
+      opacity: 0.3;
+
+      path {
+        fill: #000000;
+      }
+
+      .page-footer__logo-glass {
+        fill: $accent-color;
+      }
+    }
+  }
+}
+
 .page-footer__logo {
   margin-bottom: 30px;
 

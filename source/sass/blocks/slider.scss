@@ -8,17 +8,32 @@
   margin-right: 14px;
   border-radius: 6px;
   background-color: #bec2c7;
+  border: none;
+  cursor: pointer;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:focus,
+  &:hover {
+    background-color: #7e868f;
+  }
+
+  &:active {
+    background-color: #e9ebec;
+  }
 
   &--active {
     width: 12px;
     height: 12px;
     border: 3px solid $dark-blue;
-    background-color: #ffffff;
+    background-color: transparent;
+    &:focus,
+    &:hover {
+      background-color: transparent;
+    }
   }
-}
-
-.slider__toggle:last-child {
-  margin-right: 0;
 }
 
 @media (min-width: $tablet-width) {

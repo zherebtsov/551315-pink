@@ -144,6 +144,20 @@
     opacity: 0.3;
   }
 
+  .reviews__prev,
+  .reviews__next {
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
+  }
+
   .reviews__toggles {
     display: none;
   }

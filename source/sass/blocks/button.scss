@@ -10,6 +10,7 @@
   background-color: transparent;
   border: solid 3px #ffffff;
   border-radius: 30px;
+  cursor: pointer;
 
   &:focus,
   &:hover {
@@ -46,10 +47,11 @@
     &:focus,
     &:hover {
       opacity: 0.3;
+      color: $dark-blue;
     }
 
     &:active {
-      background-color: $bgc-grey;
+      background-color: $dark-blue;
       color: rgba(255, 255, 255, 0.3);
       opacity: 0.3;
     }

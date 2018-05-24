@@ -12,9 +12,17 @@
 
 .copyright__link {
   display: block;
-  height: 34px;
-  width: 27px;
-  background: url("../img/logo-htmlacademy.svg") no-repeat 0 0;
+
+  &:focus,
+  &:hover {
+    path {
+      fill: $dark-blue;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $desktop-width) {

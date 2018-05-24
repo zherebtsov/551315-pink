@@ -1,0 +1,14 @@
+.link {
+  color: $accent-color;
+
+  &:focus,
+  &:hover {
+    color: $dark-blue;
+    text-decoration: underline;
+  }
+
+  &:active {
+    opacity: 0.3;
+    text-decoration: none;
+  }
+}

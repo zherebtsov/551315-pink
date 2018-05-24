@@ -21,9 +21,17 @@
   display: block;
   height: 45px;
   width: 45px;
-
   border: solid 3px #e9ebec;
   border-radius: 25px;
+
+  &:focus,
+  &:hover {
+    border-color: $dark-blue;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   &--twitter {
     background: url("../img/icon-twitter.svg") no-repeat center center;

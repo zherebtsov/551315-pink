@@ -16,12 +16,12 @@
   margin-bottom: 7px;
 }
 
-.contacts__item:first-child {
-  margin-top: 35px;
-}
-
 .contacts__item {
   margin-top: 20px;
+
+  &:first-child {
+    margin-top: 35px;
+  }
 }
 
 .contacts__subtitle {
@@ -35,7 +35,6 @@
 .contacts__link {
   font-size: 24px;
   font-weight: lighter;
-  color: $accent-color;
   text-decoration: none;
 }
 
@@ -82,7 +81,7 @@
 
   .contacts {
     padding-top: 70px;
-    padding-bottom: 28px;
+    padding-bottom: 12px;
   }
 
   .contacts__title {

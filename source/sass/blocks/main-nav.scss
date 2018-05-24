@@ -10,6 +10,23 @@
 
 .main-nav__logo-link {
   line-height: 0;
+
+  &:focus,
+  &:hover {
+    .main-nav__logo path {
+      fill: $accent-color;
+    }
+  }
+
+  &:active {
+    .main-nav__logo {
+      opacity: 0.3;
+
+      path {
+        fill: #ffffff;
+      }
+    }
+  }
 }
 
 .main-nav__logo {
