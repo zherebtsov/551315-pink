@@ -34,10 +34,9 @@
   background-size: 320px auto;
 
   @media (max-width: $mobile-width) and (min-resolution: $retina-dpi),
-  (max-width: $mobile-width) and (min-resolution: $retina-dppx) {
+    (max-width: $mobile-width) and (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-map-mobile@2x.jpg");
   }
-
 }
 
 @media (min-width: $tablet-width) {
@@ -55,7 +54,7 @@
     background-size: 660px auto;
 
     @media (min-width: $tablet-width) and (min-resolution: $retina-dpi),
-    (min-width: $tablet-width) and (min-resolution: $retina-dppx) {
+      (min-width: $tablet-width) and (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-map-tablet@2x.jpg");
     }
   }
@@ -75,7 +74,7 @@
     background-size: 100% auto;
 
     @media (min-width: $desktop-width) and (min-resolution: $retina-dpi),
-    (min-width: $desktop-width) and (min-resolution: $retina-dppx) {
+      (min-width: $desktop-width) and (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-map-desktop@2x.jpg");
     }
   }
