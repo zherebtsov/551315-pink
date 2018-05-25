@@ -59,7 +59,7 @@
     }
   }
 
-  &--hidden-mobile {
+  .page-main__text-hidden-mobile {
     display: none;
 
     @media (min-width: $tablet-width) {
